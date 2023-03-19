@@ -1,0 +1,322 @@
+
+.history-course {
+    max-width: 900px;
+}
+
+.date > img {
+    display: block;
+    width: 200px;
+    height: 200px;
+}
+.date {
+    position: relative;
+    background-color: #f3f8fb;
+    
+    text-align: center;
+    padding-bottom: 4em;
+    
+}
+
+.date__client{
+    position: absolute;
+    top: 0em;
+    left: 14em;
+
+
+    & p {
+        font-size: 25px;
+        display: block;
+        font-weight: 400;
+        margin: .5em 0;
+
+    }
+
+}
+
+.date__client p:first-child {
+    position: relative;
+    display: block;
+    left: -2.5em;
+}
+
+
+
+.date ul {
+    display: flex;
+    
+}
+.date ul li {
+    list-style: none;
+
+    margin: .5rem auto;
+    
+    
+    
+    & p {
+        font-size: 20px;
+    }
+    
+
+}
+
+
+.date__list {
+    margin-top: 3em;
+}
+
+
+.date__list #first,
+.date__list #second {
+    margin-right: 1rem;
+}
+
+.date a {
+    display: block;
+    text-align: center;
+    margin-top: 2em;
+    text-decoration: none;
+    color: white;
+    background-color: #6a6fe0;
+    padding: .35em;
+    font-size: 20px;
+    width: 30%;
+    border-radius: .4em;
+
+}
+
+
+
+.date__certification {
+    padding: 1em 2em;
+    background-color: white;
+
+    
+}
+
+
+
+.date__certification ul li {
+
+    list-style: none;
+    text-align: left;
+    border-bottom: 1px solid #6a6fe0;
+    padding: 1em 1em 1em 0;
+    
+    
+    
+
+}
+.date__certification ul li:nth-child(2){
+    border-bottom: 4px solid #6a6fe0;
+}
+
+.date__certification ul li:last-child {
+    border: none;
+}
+
+
+.date__certification ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    position: absolute;
+    margin-top: 1.2em;
+    margin-left: 1em;
+    color: black;
+    
+    
+    
+}
+
+
+
+.date__certification h2 {
+    position: relative;
+    text-align: left;
+    padding-left: .6em;
+    font-size: 30px;
+    font-weight: normal;
+    margin-top: .5em;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -32px;
+        width: 40px;
+        height: 25px;
+        background-color: #6a6fe0;
+
+    }
+
+}
+
+
+
+.date__certification span {
+    background-color: #f3f8fb;
+    display: block;
+    width: 109%;
+    padding: 2em;
+    margin-left: -5%;
+    
+}
+
+
+.date__certification ul li img {
+    width: 60px;
+    height: 80px;
+}
+
+
+
+
+
+
+
+
+
+@media screen 
+and (min-width:50px)
+and (max-width:$media_port_view) {
+
+    .date > img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+
+    }
+
+    .date__client > p:first-child {
+        text-align: center;
+        left: 40px;
+    }
+
+    .date__client > p {
+        text-align: center;
+       
+        
+    }
+
+    .date__client {
+        position: absolute;
+        top: 150px;
+        left: 0%;
+        width: 85%;
+
+        display: block;
+    }
+
+    .date__client p img {
+        position: relative;
+        left: -110px;
+    }
+
+    
+
+
+    .date__client p {
+        position: relative;
+        left: 5%;
+
+        
+        
+    }
+
+    .date__client p span {
+        position: absolute;
+        top: 10px;
+        width: 100%;
+        left: 55px;
+        
+
+    }
+
+
+    .date  ul {
+        display: block;
+        width: 100%;
+        
+        
+    }
+
+
+    .date a {
+        width: 80%;
+        margin: 1rem auto;
+    }
+    .date__certification {
+        padding: 2rem 4rem;
+    }
+
+    .date__certification h2 {
+        font-size: 1.5rem;
+    }
+
+    
+    .date__certification ul li a {
+    font-size: 20px;
+    }
+
+    .date__list {
+        visibility: hidden;
+    }
+
+    .date__certification:last-child {
+        margin-top: 4rem;
+    }
+
+
+    .date__certification span {
+        display: none;
+    }
+
+
+}
+
+
+
+
+@media screen 
+and (min-width:$media_port_view)
+and (max-width:$media_port_view_medium) {
+
+    .date__client p img {
+        position: absolute;
+        left: -20px;
+        &:first-child {
+            margin-top: -.8rem;
+        }
+        
+    }
+
+    .date__client p:last-child img {
+        position: absolute;
+        margin-top: 0rem;
+    }
+
+    .date__client p span {
+        position: relative;
+        margin-left: 2rem;
+    }
+
+
+
+    .date > a {
+        width: 40%;
+        margin: 2rem auto;
+    }
+
+    .date__list #first,
+    .date__list #second {
+        margin: 0 auto;
+    }
+
+
+    .date ul li {
+        margin-top: 0;
+        margin-bottom: 1rem;
+       
+    }
+
+   
+}

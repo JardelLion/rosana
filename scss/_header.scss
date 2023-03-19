@@ -1,0 +1,457 @@
+@import "./variable";
+
+
+.purple-color {
+    background-color: $purple__color;
+    display: block;
+    width: 100%;
+    height: 5px;
+}
+
+.header {
+    background: white;
+    box-shadow: .5em .5em 1em rgb(176, 173, 173); 
+
+    width: 100%;
+    height: 37px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+    &__logo-link {
+        cursor: pointer;
+        margin:  0 .7rem;
+        margin-top: .2rem;
+
+
+        &--image {
+            width: 30px;
+        }
+        
+
+    }
+}
+
+
+
+
+  
+.search{
+    position: relative;
+    margin-left: 1rem;
+    margin-right: 2rem;
+   
+
+
+    &__box {
+    border-style: solid;
+    border-radius: .5em;
+    padding: .4em  0;
+    width: 20vw;
+
+    &::placeholder {
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+
+    }
+
+    &__image {
+        /*the search box image*/
+        position: absolute;
+        top: -1.2px;
+        left: 19vw;
+        height: 32px;
+        background-color: $search__box_color;
+        padding: .5rem .4rem 0 0;
+        border-radius: 0 .6em .6em 0;
+    
+        &:hover {
+            cursor: pointer;
+        }
+    
+        
+    }
+  
+}
+
+
+
+
+
+/*header dropdown*/
+.dropdown {
+    min-width: 15em;
+    position: relative;
+
+
+    &__menu {
+        list-style: none;
+        padding: 0.2em 0.5em;
+        background: white;
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.2);
+        border-radius: 0.5em;
+        color: #9fa5b5;
+        position: absolute;
+        top: 3em;
+        left: 50%;
+        width: 100%;
+        transform: translateX(-50%);
+        opacity: 0;
+        display: none;
+        transition: 0.2s;
+        z-index: 1;
+
+
+        & li {
+            padding: 0.4em 0.5em;
+            margin: 0.3em 0;
+            cursor: pointer;
+            border-radius: 0.5em;
+
+            &:hover {
+                background: $purple__color;
+            }
+
+        }
+
+    }
+
+}
+
+.select {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .5em;
+    padding: .3em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/*add with javascript*/
+.select-clicked {
+    border: 1px $purple__color solid;
+    box-shadow: 0 0 0.4em $purple__color;
+}
+
+
+.select:hover {
+    background: #f1f6f9;
+
+}
+
+
+.caret {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid black;
+    transition: .3s;
+    margin-left: 1em;
+
+}
+
+
+
+
+
+
+
+.active {
+    background: $purple__color;
+
+}
+
+
+.dropdown__menu--open {
+    display: block;
+    opacity: 1;
+
+}
+
+
+/* add with javascript*/
+.caret-rotate {
+    transform:  rotate(180deg);
+}
+
+
+
+
+.nav-bar {
+    flex: 1;
+  
+    
+   
+
+    & ul li {
+        display: inline-block;
+        list-style: none;
+        margin:0 2%;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: black;
+        padding: .0em;
+        border-radius: .5em;
+        font-size: .8rem;
+       
+        
+        &:hover {
+            background-color: #f1f6f9;
+        }
+
+
+        &--login {
+            color: white;
+            background-color: #6a6fe0;
+            padding: .4rem .4rem;
+            //margin-left: 1rem;
+            font-weight: bold;
+            
+    
+
+            &:hover {
+                color:black;
+            }
+        }
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+/*the side bar burger*/
+.sidebar {
+    height: 100vh;
+    margin-top: .5em;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: -10px;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.1s;
+
+
+    a {
+        padding: 8px 8px 8px 2rem;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+}
+
+/*when you mouse ove the navigation links change their color*/
+.sidebar a:hover {
+    color: black;
+}
+
+
+.sidebar .closebtn{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+
+
+
+/*the button used to  open the sidebar*/
+.openbtn {
+    font-size: 28px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    padding: 0px 5px;
+    border: none;
+
+
+    &:hover {
+        background-color: rgb(218, 213, 213);
+    }
+}
+
+
+/*transition effect*/
+#btn-main {
+    transition:  margin-right .5s;
+    padding: 0px 10px;
+}
+
+
+
+
+/*burger side bar*/
+#mySidebar nav {
+
+    a {
+        color: black;
+        border-bottom: 1px solid black;
+        padding: 2rem;
+    }
+
+    
+
+}
+
+#mySidebar nav a:last-child {
+    border: none;
+}
+
+.caret-left {
+    position: relative;
+    background-color: white;
+    padding-bottom: 8em;
+    margin-top: -60px;
+    background-color: $search__box_color;
+    
+    
+
+
+
+    img {
+        position: absolute;
+        top: 10px;
+        left: 88px;
+        width: 80px;
+
+    }
+}
+
+.caret-left p {
+    position: absolute;
+    font-size: 20px;
+    bottom: 10px;
+    left: 22%;
+    
+}
+
+.caret-left a {
+    width: 100%;
+    text-align: left;
+}
+
+#img-left {
+    position: absolute;
+    top: 20px;
+    left: 43px;
+
+}
+
+
+
+
+@media screen 
+and (min-width:50px)
+and (max-width:$media_port_view) {
+    .dropdown,
+    .nav-bar {
+        display: none;
+        
+    }
+
+    #btn-main {
+        position: absolute;
+        right: 0;
+        padding: 0;
+        margin: 0;
+    }
+
+    .search {
+        margin-right: auto;
+        margin-left: 20vw;
+    }
+
+    .search__box {
+        width: 40vw;
+    }
+    .search__image {
+        left: 39vw;
+    }
+
+
+    
+
+    .caret-left img {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        width: 80px;
+    }
+
+    .caret-left p {
+        position: absolute;
+        font-size: 20px;
+        bottom: 10px;
+        margin-left:10%;
+    }
+    .openbtn {
+        padding: 0 15px;
+    }
+
+
+
+    
+    
+
+
+    
+
+
+   
+}
+
+
+
+
+@media screen 
+and (min-width: $media_port_view)
+and (max-width: $media_port_view_medium) {
+    
+    
+    .nav-bar li:last-child{
+        display: none;
+
+    }
+
+    .nav-bar__link {
+        font-size: 1rem;
+       
+    }
+    #btn-main {
+        position: absolute;
+        right: 0;
+    }
+    .openbtn {
+        padding: 0 15px;
+    }
+   
+    
+}
+
+@media screen and (min-width:990px){
+    
+    .nav-bar ul {
+        margin-left: 12%;
+    }
+}

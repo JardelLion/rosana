@@ -1,0 +1,104 @@
+@import "./variable";
+.open-account__form form,
+form{
+    width: 80%;
+    max-width: 850px;
+    margin: 0 auto;
+
+
+    input {
+        display: block;
+        width:38%;
+        min-width: 260px;
+        margin: 1em auto;
+        padding: 0.4em;
+        text-indent: 1em;
+        font-size: 1.2em;
+        border-radius: 0.5em;
+        border-style: solid;
+        border-color: $search__box_color;
+    }
+    p {
+        width: 40%;
+        margin: 2.2em auto;
+        
+    }
+}
+
+
+.open-account__btn {
+    display: block;
+        width:30%;
+        margin: 1em auto;
+        padding: 0.5em;
+        text-indent: 1em;
+        font-size: 1.2em;
+        border-radius: 0.5em;
+        border-style: solid;
+        border-width: 0.05em;
+        border-color: $purple__color;
+        color: $purple__color;
+        background-color: white;
+        box-shadow: 3px 5px 4px rgb(236, 228, 228);
+
+
+        &:hover {
+            cursor: pointer;
+        }
+
+}
+
+
+
+@media screen 
+and (min-width:50px)
+and (max-width:$media_port_view) {
+   
+
+   .open-account {
+       background-color: blue;
+   }
+
+
+
+    #open-account__form input,
+    .open-account__btn {
+            width: 60%;
+            min-width: 280px;
+        }
+    #open-account__form  p {
+            width:60%;
+            min-width: 280px;
+        }
+    
+
+
+    
+}
+
+
+
+@media screen 
+and (min-width:$media_port_view) 
+and (max-width:$media_port_view_medium){
+    .open-account {
+        width: 75%;
+        margin: 0 auto;
+        background-color: blue;
+    }
+
+
+
+    #open-account__form  input,
+    .open-account__btn {
+        width: 60%;
+        min-width: 300px;
+    }
+
+    #open-account__form p {
+        width:60%;
+        min-width: 300px;
+    }
+    
+
+}

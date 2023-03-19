@@ -1,0 +1,360 @@
+@import "./scss/header";
+@import "./scss/reset";
+@import "./scss/footer";
+@import "./scss/create_account";
+@import "./scss/home";
+@import "./scss/versionamento_main";
+@import "./scss/variable";
+@import "./scss/video";
+@import "./scss/update_dados";
+@import "./scss/gratis";
+@import "./scss/concluir_compra";
+@import './scss/course-name-buy';
+@import './scss/bank-date';
+@import "./scss/total-de-compas";
+
+body {
+
+    font-family: sans-serif;
+    background-color: $body__background;
+    
+}
+
+
+.gray {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 160%;
+    z-index: 9999;
+    width: 66%;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+
+
+
+.access,
+.open-account{
+    background-color: #ffffff ;
+}
+.free-days, .buy,
+.history-course,.student,
+.home, .versionamento,
+.access,#video,
+.open-account{
+    width: 85%;
+    margin: 3.5em auto;
+    text-align: center;
+    padding: 4em 0 4em 0;
+    
+    
+
+
+}
+
+.free-days {
+    width: 93%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.access__title,
+.open-account__title {
+    color:$purple__color;
+    font-weight: normal;
+}
+
+
+
+
+
+#access__form {
+    max-width: 850px;
+
+    input[type='email'],input[type='password'] {
+        display: block;
+        width:33%;
+        min-width: 260px;
+        margin: 1em auto;
+        padding: 0.4em;
+        text-indent: 1rem;
+        font-size: 1.2rem;
+        border-radius: 0.5em;
+        border-style: solid;
+        border-color: $search__box_color;
+        color:  black;
+
+    }
+
+
+}
+
+label[for='checkbox'] {
+    display: block;
+    width:25%;
+    min-width: 260px;
+    margin: 0 auto;
+    
+}
+input[type='checkbox']{
+    display: inline;
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 1em;
+    border-style: outset;
+    border-color: black;
+
+    :hover {
+        cursor: pointer;
+    }
+}
+
+
+
+.access__btn {
+
+    width: 33%;
+    padding: 1em;
+    border: none;
+    border-radius: 0.6em;
+    margin: 1.5em 0;
+    color: #ffffff;
+    background-color: $purple__color;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+#recovery__password {
+    border: none;
+    padding: 1em;
+    width:25%;
+    min-width: 220px;
+    border-bottom:0.1em solid black;
+    margin-bottom: 1.5em;
+}
+
+
+.create__account_button{
+   
+    width: 70%;
+    min-width: 260px;
+    margin: 2em auto;
+
+    a {
+        border: 0.1em solid black;
+        text-decoration: none;
+        color: black;
+        padding: .5em 5em;
+        border-radius: 0.6em;
+    }
+    
+}
+
+
+#facebook__login,
+#google__login {
+    border: 0.1em solid black;
+    text-align: left;
+    width:30%;
+    min-width: 260px;
+    border-radius: 0.6em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    
+    a {
+        display: inline-block;
+        text-decoration: none;
+        text-indent: 20pt;
+        color: black;
+        width: 100%;
+        margin: 0 auto;
+     
+
+    
+    }
+
+
+}
+
+
+#facebook__login {
+    margin-top: 1em;
+    border-color: #039be5;
+    :hover {
+        cursor: pointer;
+    }
+}
+
+#google__login {
+    border-color: #ff3d00;
+    margin-bottom: 2em;
+    :hover{
+        cursor: pointer;
+    }
+}
+
+
+span {
+    img {
+        width: 30px;
+        float: right;
+        margin-top: .2em;
+    }
+}
+
+
+
+.social-link {
+    height: 40px;
+    text-align: left;
+}
+
+
+.social-link p {
+    display: inline-block;
+    margin-top: .6em;
+}
+
+
+
+
+
+@media screen 
+and (min-width:50px)
+and (max-width:$media_port_view) {
+
+    .home {
+        width: 82%;
+        margin: 1rem auto;
+    }
+
+    .student,
+    .versionamento,
+    .video,
+    .history-course,
+    .free-days,
+    .buy
+     {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+
+    .access {
+        width: 90%;
+        min-width: 400px;
+        margin: 4rem auto 0 auto;
+    }
+
+    .open-account {
+        width: 90%;
+        margin: 4rem auto 0 auto;
+    }
+
+
+    #access__form  {
+
+        input[type='email'],input[type='password'] {
+        
+            width:60%;
+            max-width: 280px;
+            
+    
+        }
+        
+    }
+
+
+
+    .access__btn {
+        width: 60%;
+        max-width: 280px;
+    }
+
+    .create__account_button a {
+        display: block;
+        width:60%;
+        min-width: 260px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: .9rem;
+    }
+
+    #facebook__login,
+    #google__login{
+        width: 60%;
+        max-width: 280px;
+    
+    }
+
+    
+
+   
+
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+@media screen 
+and (min-width:$media_port_view) 
+and (max-width:$media_port_view_medium){
+
+    .home {
+        width: 89%;
+        margin: 1rem auto;
+    }
+
+    
+
+    .access,
+    .student,
+    .versionamento,
+    .history-course,
+    .free-days, .buy,
+    .video{
+        width: 95%;
+        margin: 1rem auto;
+    }
+    .buy {
+        padding: 01.5rem 0;
+    }
+
+
+    #access__form  {
+
+        input[type='email'],input[type='password'] {
+        
+            width:60%;
+            max-width: 280px;
+            
+    
+        }
+        
+    }
+
+    .access__btn {
+        width: 60%;
+        max-width: 280px;
+    }
+
+    #facebook__login,
+    #google__login{
+        width: 60%;
+        max-width: 280px;
+    }
+
+}
+

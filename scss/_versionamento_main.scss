@@ -1,0 +1,245 @@
+@import "./variable";
+
+/*versionamento starts*/
+.versionamento{
+    background-color: $body__background;
+    text-align: center;
+    width: 70%;
+    max-width: 900px;
+    margin: 0 auto;
+    h1 {
+        color: black;
+        width: 750px;
+        margin: 0 auto;
+
+        margin-bottom: 2em;
+    }
+
+
+}
+
+.versionamento > p {
+    width: 80%;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+
+.versionamento > a {
+    display: block;
+    text-decoration: none;
+    border: 1px solid $purple__color;
+    background-color: $purple__color;
+    border-radius: .5em;
+    width: 30%;
+    padding: .6em;
+    margin: 2em auto;
+    color: white;
+}
+/*versionamento ends*/
+
+
+/*container-list start*/
+.container-list {
+    text-align: left;
+}
+.container-list li {
+    list-style: none;
+    margin: 1em 0;
+}
+
+.container-list p {
+    display: inline;
+    margin-left: .5em;
+}
+
+
+
+/*container-list end*/
+
+
+/*container content start*/
+
+/*.container-context {
+    width: 70%;
+    height: 60vh;
+    background-color: $search__box_color;
+    border-radius: .4em;
+    margin: 0 auto;
+}
+
+*/
+
+
+
+#btn-modulo,
+#btn-resultado,
+#btn-certificacao {
+    border: none;
+    background-color: $search__box_color;
+    font-size: 20px;
+    margin-top: 1em;
+
+    &:hover {
+        cursor: pointer;
+    }
+    margin-left: 2em;
+}
+
+
+
+
+
+
+
+.versionamento-context{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    background-color: $search__box_color;
+    
+    padding: 3em;
+    height: 500px;
+    border-radius: .5em;
+}
+.versionamento ol {
+    font-weight: bold;
+
+}
+
+.ol-title,
+.buy__book--subtitle{
+    font-weight: normal;
+    text-align: left;
+    margin: 1em 0;
+}
+
+.versionamento-context ol ul li {
+    list-style: disc;
+    margin-left: 2em;
+    text-align: left;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+/*versionamento context end*/
+
+
+
+
+
+/*resultado context start*/
+/*certificacao context start*/
+
+.certificacao-context p,
+.resultado-context p {
+    margin-top: 2.5em;
+    text-align: left;
+}
+
+.certificacao-context h4,
+.resultado-context h4 {
+    text-align: left;
+    margin-top: 1em;
+    font-weight: normal;
+}
+
+
+
+/*resultado context end*/
+/*certificacao context end*/
+
+
+
+
+
+
+
+
+
+@media screen 
+and (min-width:50px)
+and (max-width:$media_port_view) {
+  
+
+    .versionamento > h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .versionamento > p {
+        width: 100%;
+        font-size: 1.1rem;
+        margin: 0;
+    }
+    .versionamento > a {
+        width: 60%;
+        margin: 2rem auto;
+    }
+
+
+    .versionamento-context {
+        background-color: white;
+        height: 700px;
+        
+    }
+
+    #btn-modulo,
+    #btn-resultado,
+    #btn-certificacao {
+        display: block;
+        width: 80%;
+        padding: .5rem;
+        border-radius: .4rem;
+    }
+
+
+    #btn-certificacao {
+        margin-bottom: 3rem;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen 
+and (min-width:$media_port_view)
+and (max-width:$media_port_view_medium) {
+
+    .versionamento > h1 {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .versionamento > p {
+        width: 100%;
+        font-size: 1.1rem;
+        margin: 0;
+    }
+    .versionamento > a {
+        width: 60%;
+        margin: 2rem auto;
+    }
+
+
+    .versionamento-context {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        height: 700px;
+        
+    }
+
+    
+}

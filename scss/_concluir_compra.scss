@@ -1,0 +1,119 @@
+.buy__container {
+    background: url("../../img/image\ 34.png") #182032;
+    background-size: cover;
+    border-radius: 2em;
+    
+}
+
+.buy {
+    max-width: 800px;
+}
+
+
+
+.buy__month {
+    float: left;
+    width: 300px;
+    
+
+}
+
+
+
+.buy__anual {
+    float: right;
+    width:300px;
+    
+}
+
+.buy__style button {
+    margin-bottom: 8%;
+    
+}
+
+
+.buy__container > h1 {
+    color: white;
+    font-size: 30px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.buy__container > p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10rem;
+}
+
+
+
+.buy > h1 {
+    text-align: left;
+    color: black;
+    
+}
+
+
+
+
+
+
+.buy > a {
+    text-align: left;
+    display: block;
+    margin-top: .5rem;
+    margin-bottom: 2.5rem;
+    text-decoration: none;
+    width: 35%;
+}
+
+
+.buy .date__certification {
+    background-color: white;
+    margin-top: 2rem;
+
+}
+
+
+
+
+
+
+
+@media screen 
+and (min-width:50px)
+and (max-width:$media_port_view_medium) {
+
+    .buy {
+        max-width: 700px;
+    }
+    .buy__container {
+        background: url("../../img/image\ 32.png") #182032;
+        background-size: cover;
+        border-radius: 2em;
+        
+    }
+    .buy > h1 {
+        text-align: center;
+    }
+
+    .buy > a {
+        width: 48%;
+        margin: 2rem auto;
+        font-size: 1rem;
+        text-align:center;
+    }
+
+
+    .buy__month,
+    .buy__anual{
+        float: none;
+        width: 100%;
+    }
+
+
+    
+    
+    
+
+}
